@@ -1,0 +1,67 @@
+//CSS Reset
+@import 'reset';
+//VARIABLES
+
+$blue: #1C688E;
+$lightgrey: #E6E6E6;
+
+.clear-fix {
+	clear: both;
+	float: none;
+}
+
+body {
+	background-color: #fff;
+	font-family: "Helvetica", sans-serif;
+	font-size: 15px;
+
+}
+header {
+	background-color: $blue;
+	height: 83px;
+	padding: 20px;
+	input {
+		height: 40px;
+		width: 100%;
+		font-size: 15px;
+
+	}
+}
+.container {
+	width: 360px;
+}
+
+aside.filters {
+	padding: 20px;
+	text-align: center;
+}
+section.results {
+	padding: 40px;
+}
+
+button.show-more {
+	width: 184px;
+	height: 37px;
+	border: 1px solid $lightgrey;
+	border-radius: 4px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+
+/*TABLET STYLES*/
+@media screen and ( min-width: 640px){
+	.container {
+		width: 640px;
+	}
+	aside.filters, section.results {
+		float: left;
+	}
+	aside.filters {
+		width: 33%;
+		text-align: left;
+	}
+	section.results {
+		width: 66%;
+	}
+}

@@ -1,0 +1,102 @@
+/**
+ * modified version of eric meyer's reset 2.0
+ * http://meyerweb.com/eric/tools/css/reset/
+ */
+/**
+ * basic reset
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, main,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/**
+ * HTML5 display-role reset for older browsers
+ */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section,
+main, summary {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clear-fix {
+  clear: both;
+  float: none; }
+
+body {
+  background-color: #fff;
+  font-family: "Helvetica", sans-serif;
+  font-size: 15px; }
+
+header {
+  background-color: #1C688E;
+  height: 83px;
+  padding: 20px; }
+  header input {
+    height: 40px;
+    width: 100%;
+    font-size: 15px; }
+
+.container {
+  width: 360px; }
+
+aside.filters {
+  padding: 20px;
+  text-align: center; }
+
+section.results {
+  padding: 40px; }
+
+button.show-more {
+  width: 184px;
+  height: 37px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px; }
+
+/*TABLET STYLES*/
+@media screen and (min-width: 640px) {
+  .container {
+    width: 640px; }
+  aside.filters, section.results {
+    float: left; }
+  aside.filters {
+    width: 33%;
+    text-align: left; }
+  section.results {
+    width: 66%; } }
